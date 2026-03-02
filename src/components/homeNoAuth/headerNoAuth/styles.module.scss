@@ -1,7 +1,7 @@
-@import "../../../../styles/colors.module.scss";
+@use "../../../../styles/colors.module.scss" as colors;
 
 .ctaSection{
-    background-color: $lightRed;
+    background-color: colors.$lightRed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,9 +27,9 @@
 .navBtn{
     margin: 0px 5px;
     border-color: transparent;
-    color: $lightGray;
+    color: colors.$lightGray;
     &:hover {
-        border-color: $lightRed;
+        border-color: colors.$lightRed;
         color: white;
         background-color: transparent;
     }

@@ -1,4 +1,10 @@
-@import  "../../../styles/colors.module.scss";
+@use  "../../../../styles/colors.module.scss" as colors;
+
+
+#btn1 {
+  text-decoration-line: none;
+}
+
 
 .imgPresentation {
     width:550px;
@@ -6,7 +12,7 @@
 .subTitle{
     font-size: 18px;
     font-weight: bold;
-    color: $lightRed;
+    color: colors.$lightRed;
 }
 .title{
     font-size: 40px;
@@ -15,26 +21,34 @@
 }
 .description {
     font-size: 20px;
-    color: $lightGray;
+    color: colors.$lightGray;
     margin: 20px 0px 40px 0px;
 }
 .btnCta {
-    font-weight: bold;
-    color:white;
+  text-decoration: none !important;   // força remover sublinhado
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 14px 30px;
+  border: 2px solid colors.$lightRed;
 
-    display:flex;
-    align-items: center;
-    gap: 25px;
-    padding: 14px 30px;
-    border: 2px solid $lightRed;
+  &:hover {
+    background-color: transparent;
+    text-decoration: none !important;
+  }
 }
+
 
 .btnImg {
     width:11px;
+    text-decoration: none;
+    border-color: transparent;
     
     &:hover {
-        border-color: $darkRed;
-        color:$lightGray;
+        border-color: colors.$darkRed;
+        color:colors.$lightGray;
         background-color: transparent;
     }
 }

@@ -1,9 +1,8 @@
-@import "../../../../styles/colors.module.scss";
+@use "../../../../styles/colors.module.scss" as colors;
 
-.sectionTitle {
-
+.sectionTitle {    
     font-size: 20px;
-    font-weight: bold;
+    font-weight: italic;
     text-align: center;
     margin: 50px 0px 30px 0px;
 }
@@ -12,6 +11,7 @@
     width: 340px;
     height: 280px;
     border-radius: 8px;
+    border-color: colors.$lightGray;
     padding: 14px;
     background-size: cover;
     display: flex;
@@ -25,7 +25,7 @@
     }
     .cardDescription {
         font-size: 15px;
-        color: $lightGray;
+        color: colors.$lightGray;
     }
     &:hover {
         transform: scale(1.03);
