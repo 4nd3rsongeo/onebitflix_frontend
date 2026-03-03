@@ -1,14 +1,83 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@use "./colors.module.scss" as colors;
+
+
+.main {
+    background-image: linear-gradient(to bottom, #151515, #000);
 }
 
-main {
-  background-color: #151515;
-  // min-height: 100vh;
-  color: #fff;
-  p {
-    margin: 0;
-  }
+.formTitle{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.form {
+    width: 600px;
+    padding: 50px;
+    border: 1px solid colors.$darkGray;
+    margin: 0 auto;
+
+}
+.label {
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.input {
+    border-color: colors.$darkGray;
+    background-color: transparent;
+    color:white;
+
+    &::placeholder {
+        color: colors.$lightGray;
+
+    }
+    &:focus {
+        background-color: transparent;
+        border-color: colors.$lightGray;
+        color:white;
+        box-shadow: none;
+    }
+}
+.inputName {
+    @extend .input;
+    text-transform: uppercase;
+    &::placeholder {
+        text-transform: none;
+    }
+}
+
+.formBtn {
+    display: block;
+    margin: 50px auto 0 auto;
+    border-color: colors.$lightRed;
+    color: white;
+
+    &:hover {
+        background-color: transparent;
+        color: colors.$lightGray;
+        border-color: colors.$darkRed;
+    }
+
+}
+
+@media (max-width: 770px) {
+    .formTitle{
+        font-size: 30px;
+    }
+    .form {
+        width: 95%;
+    }
+}
+
+@media (max-width: 540px) {
+    .form {
+        padding: 50px 10px;
+    }
+}
+
+@media (max-width: 540px) {
+    .formTitle {
+        font-size: 24px;
+        text-align: center;
+    }
 }
