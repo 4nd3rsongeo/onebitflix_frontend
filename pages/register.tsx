@@ -46,6 +46,7 @@ export default function Register(){
            
             alert(`Bem-vindo, ${params.firstName}!`);
             router.push("/login?registered=true")
+            router.push("/login")
 
             
             // Redirecionar para login ou dashboard
