@@ -5,7 +5,7 @@ import { Container, Button, Form, FormGroup, Label, Input} from 'reactstrap';
 import Footer from "src/components/common/footer";
 import authService from "src/services/authService";
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ToastComponent from "src/components/common/toast";
 
 
@@ -13,6 +13,15 @@ export default function Register(){
     const router = useRouter();
     const[toastIsOpen, setToastIsOpen] = useState(false);
     const[toastMessage, setToastMessage] = useState("");
+
+    useEffect(() => {
+        if(sessionStorage.getItem("onebitflix-token")){
+            router.push("/home");
+        }
+    }, []);
+
+
+
     const handleRegister = async (event: React.SyntheticEvent<HTMLFormElement>) => {
     event.preventDefault();
 
