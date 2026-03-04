@@ -1,5 +1,6 @@
 import Head from "next/head"
-import HeaderAuth from "src/components/common/headerAuth"
+import FeaturedSession from "src/components/homeAuth/featuredSession"
+import NewestCategory from "src/components/homeAuth/newestCategory"
 
 
 export default function HomeAuth(){
@@ -10,7 +11,8 @@ export default function HomeAuth(){
                 <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
             </Head>
             <main>
-                <HeaderAuth />
+                <FeaturedSession />
+                <NewestCategory />
             </main>
         </>
     )

@@ -24,7 +24,24 @@ const courseService = {
             return error.response;
         })
         return res;
+    },
+    getFeaturedCourses: async () => {
+    try {
+      const token = sessionStorage.getItem("onebitflix-token");
+
+      const res = await api.get("/courses/featured", {
+        headers: {
+          Authorization: token ? `Bearer ${token}` : "",
+        },
+      });
+
+      return { data: res.data, error: null };
+    } catch (error: any) {
+      console.log(error.response?.data?.message || "Erro inesperado");
+      return { data: null, error: error.response?.data?.message };
     }
+  },
+
 }
 
 export default courseService;
