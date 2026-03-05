@@ -4,6 +4,7 @@ import useSWR from "swr";
 import courseService, { CourseType } from "src/services/courseService";
 import HeaderAuth from "src/components/common/headerAuth";
 import Link from "next/link";
+import PageSpinner from "src/components/common/spinner";
 
 
 export default function FeaturedSession(){
@@ -12,12 +13,7 @@ export default function FeaturedSession(){
 
     if (error) return <p>Erro ao carregar cursos.</p>;
 
-    if(!data) return(
-        <>
-            <p>Loading...</p>
-            <h1>Algo deu errado</h1>
-        </>
-    );
+    if(!data) {return <PageSpinner />};
 
     return(
         <>

@@ -4,6 +4,8 @@ import Link from "next/link";
 import Modal from "react-modal";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import { profile } from "console";
+import { profileService } from "src/services/profileService";
 
 Modal.setAppElement("#__next");
 
@@ -13,12 +15,14 @@ export default function HeaderAuth() {
     const [initials, setInitials] = useState("");
 
     useEffect(() => {
-        const firstName = sessionStorage.getItem("onebitflix-firstName");
-        const lastName = sessionStorage.getItem("onebitflix-lastName");
+        profileService.fetchCurrent().then((user) => {
+            const firstName = user.firstName;
+            const lastName = user.lastName;
 
-        if (firstName && lastName) {
-            setInitials(`${firstName.charAt(0)}${lastName.charAt(0)}`);
-        }
+            if (firstName && lastName) {
+                setInitials(`${firstName.charAt(0)}${lastName.charAt(0)}`);
+            }
+        }); 
     }, []);
 
     const handleOpenModal = () => {

@@ -1,5 +1,6 @@
 import styles from "../../../../styles/slideCategory.module.scss";
 import SlideComponent from "src/components/common/slideComponent";
+import PageSpinner from "src/components/common/spinner";
 import categoriesService from "src/services/categoriesService";
 import useSWR from "swr";
 
@@ -16,13 +17,7 @@ export default function ListCategoriesSlide({categoryId, categoryName}: props){
     console.log(data);
    
     if(error) return error;
-    if(!data){
-        return(
-            <>
-                <p>Loading...</p>
-            </>
-        );
-    }
+    if(!data){ return <PageSpinner />}; 
 
     return(
         <>
