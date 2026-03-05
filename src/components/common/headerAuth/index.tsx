@@ -2,7 +2,7 @@ import { Container, Form, Input } from "reactstrap";
 import styles from "./styles.module.scss";
 import Link from "next/link";
 import Modal from "react-modal";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
 Modal.setAppElement("#__next");
@@ -10,6 +10,16 @@ Modal.setAppElement("#__next");
 export default function HeaderAuth() {
     const router = useRouter();
     const [modalOpen, setModalOpen] = useState(false);
+    const [initials, setInitials] = useState("");
+
+    useEffect(() => {
+        const firstName = sessionStorage.getItem("onebitflix-firstName");
+        const lastName = sessionStorage.getItem("onebitflix-lastName");
+
+        if (firstName && lastName) {
+            setInitials(`${firstName.charAt(0)}${lastName.charAt(0)}`);
+        }
+    }, []);
 
     const handleOpenModal = () => {
         setModalOpen(true);
@@ -50,7 +60,7 @@ export default function HeaderAuth() {
                 className={styles.searchImg}
             />
             <p className={styles.userProfile} onClick={handleOpenModal}>
-                AB
+                {initials}
             </p>
             </div>
             <Modal
