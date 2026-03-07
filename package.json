@@ -17,7 +17,7 @@
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "react-modal": "^3.16.3",
-    "react-player": "^3.4.0",
+    "react-player": "^2.10.0",
     "reactstrap": "^9.2.3",
     "sass": "^1.97.3",
     "swr": "^2.4.1"

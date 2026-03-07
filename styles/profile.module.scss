@@ -1,5 +1,19 @@
 @use "./colors.module.scss" as colors;
 
+.main {
+    display: flex;
+    flex-direction: column;
+}
+.gridContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 60px;
+    padding: 80px 0;
+}
+.header {
+    background-color: black;
+}
+
 .form {
     border: 1px solid colors.$darkGray;
     padding: 20px 0px;
@@ -8,6 +22,8 @@
     margin: 0 auto;
     border-radius: 10px;
     min-height: 60px;
+    display: flex;
+    flex-direction: column;
 }
 
 .formName {
@@ -54,6 +70,7 @@
 .label {
     font-size: 14px;
     font-weight: bold;
+    margin: auto 15px;
 }
 .inputFlexDiv {
     display: flex;    
@@ -71,6 +88,7 @@
     background-color: transparent;
     border: 1px solid colors.$darkGray;
     color:white;
+    margin: 15px 10px;
     &::placeholder {
         color: colors.$lightGray;
     }
@@ -88,7 +106,7 @@
     align-items: center;
     margin-top: 20px;
     gap: 20px;
-    text-transform: lowercase;
+    
 }
 
 .input {
@@ -102,9 +120,9 @@
     color: white;
     font-weight: bold;
     font-size: 15px;
-    padding: 6px 20px;
+    padding: 10px 20px;
     display: block;
-    margin: 10px auto;
+    margin: 15px 5px;
     &:hover {
         background-color: transparent;
         color: colors.$lightGray;

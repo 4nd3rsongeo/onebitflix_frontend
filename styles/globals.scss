@@ -4,14 +4,14 @@
   box-sizing: border-box;
 }
 
-main {
-  background-color: #151515;
-  // min-height: 100vh;
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: #151515; // ou a cor padrão do seu projeto
   color: #fff;
-  p {
-    margin: 0;
-  }
+  font-family: sans-serif;
 }
+
 
 ::-webkit-scrollbar {
   width: 8px;  
@@ -24,4 +24,7 @@ main {
 ::-webkit-scrollbar-thumb {
   background: #868686;
   border-radius: 40px;
+}
+body {
+  background: #151515!important;
 }

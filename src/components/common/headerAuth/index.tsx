@@ -13,6 +13,20 @@ export default function HeaderAuth() {
     const router = useRouter();
     const [modalOpen, setModalOpen] = useState(false);
     const [initials, setInitials] = useState("");
+    const [searchName, setSearchName] = useState("");
+
+    const handleSearch = async (event: React.SyntheticEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        // Implementation for search functionality
+        router.push(`/search?name=${searchName}`);
+        setSearchName("");
+        };
+
+    const handleSearchClick = (event: React.MouseEvent<HTMLImageElement>) => {
+        router.push(`/search?name=${searchName}`);
+        setSearchName("");
+    };
+
 
     useEffect(() => {
         profileService.fetchCurrent().then((user) => {
@@ -36,8 +50,7 @@ export default function HeaderAuth() {
     const handleLogout = () => {
         sessionStorage.clear();
         router.push("/")
-    }
-
+    };    
 
     return (
         <>
@@ -50,18 +63,21 @@ export default function HeaderAuth() {
             />
             </Link>
             <div className="d-flex align-items-center">
-            <Form>
+            <Form onSubmit={handleSearch}>
                 <Input
                 name="search"
                 type="search"
                 placeholder="Pesquisar"
                 className={styles.input}
+                value={searchName}
+                onChange={(event) => setSearchName(event.currentTarget.value.toLocaleLowerCase())}
                 />
             </Form>
             <img
-                src="homeAuth/iconSearch.svg"
+                src="/homeAuth/iconSearch.svg"
                 alt="lupaHeader"
                 className={styles.searchImg}
+                onClick={handleSearchClick}
             />
             <p className={styles.userProfile} onClick={handleOpenModal}>
                 {initials}

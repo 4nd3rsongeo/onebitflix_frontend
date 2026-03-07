@@ -1,19 +1,27 @@
 @use "../../../../styles/colors.module.scss" as colors;
 
+.linkWrapper {
+  text-decoration: none; 
+  color: inherit;       
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .slide {
-    width: 280px;;
-    height: 330px;
-    border-color:colors.$darkGray;
+    width: 290px;;
+    height: 350px;
+    border: 1px solid colors.$darkGray;
     cursor: pointer;
     transition: 0.4s;
     overflow: hidden;
     text-overflow: clip;
-    margin-left: 12px;
+    margin: 0 20px;
 
     &:hover {
-        border-color: #8116a1;
-        height:330px;
-        background-color:colors.$lightRed;
+        border-color: colors.$lightRed;
+        height:410px;        
     }
 }
 .slideImg {

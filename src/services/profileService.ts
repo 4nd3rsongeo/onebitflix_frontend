@@ -26,7 +26,7 @@ export const profileService = {
         }).catch((error: any) => {
             return error.response;
         });
-        console.log("USER DATA:", res.data);
+        // console.log("USER DATA:", res.data);
         return res.data;
     },
 
