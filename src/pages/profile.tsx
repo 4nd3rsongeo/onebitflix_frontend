@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../styles/profile.module.scss";
+import styles from "../../styles/profile.module.scss";
 import UserForm from "src/components/profile/user";
 import HeaderAuth from "src/components/common/headerAuth";
 import { Button, Col, Container, Row } from "reactstrap";

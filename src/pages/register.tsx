@@ -1,5 +1,5 @@
 import HeaderGeneric from "src/components/common/headerGeneric";
-import styles from "../styles/registerLogin.module.scss";
+import styles from "../../styles/registerLogin.module.scss"
 import Head from "next/head";
 import { Container, Button, Form, FormGroup, Label, Input} from 'reactstrap';
 import Footer from "src/components/common/footer";

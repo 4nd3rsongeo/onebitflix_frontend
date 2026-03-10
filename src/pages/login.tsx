@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import styles from "../styles/registerLogin.module.scss";
+import styles from "../../styles/registerLogin.module.scss"
 import Head from "next/head";
 import { Button, Container, Form, FormGroup, Input, Label } from "reactstrap";
 import Footer from "src/components/common/footer";

@@ -1,4 +1,4 @@
-import styles from "../../styles/coursePage.module.scss";
+import styles from "../../../styles/coursePage.module.scss"
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";

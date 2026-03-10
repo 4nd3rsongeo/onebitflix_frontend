@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import styles from "../../../styles/episodePlayer.module.scss";
+import styles from "../../../../styles/episodePlayer.module.scss"
 import Head from "next/head";
 import HeaderGeneric from "src/components/common/headerGeneric";
 import { useEffect, useRef, useState } from "react";

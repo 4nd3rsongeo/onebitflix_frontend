@@ -1,4 +1,4 @@
-import styles from "../styles/search.module.scss";
+import styles from "../../styles/search.module.scss"
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
@@ -12,15 +12,16 @@ import courseService, { CourseType } from "src/services/courseService";
 export default function Search(){
     const router = useRouter();
     const searchName:any = router.query.name;
+
     const [searchResult, setSearchResult] = useState<CourseType[]>([]);
-    const [loading, setLoading]=useState(true);
-    
-    const searchCourses = async function () {      
+    const [loading, setLoading] = useState(true);
+
+    const searchCourses = async () => {      
         const res = await courseService.getSearch(searchName);
         setSearchResult(res.data.courses);
     };
-    
 
+    // 1) Verifica login
     useEffect(() => {
         if(!sessionStorage.getItem('onebitflix-token')){
             router.push("/login")
@@ -29,13 +30,17 @@ export default function Search(){
         }
     },[])
 
+    // 2) Busca cursos
+    useEffect(() => {
+        if (!loading) {
+            searchCourses();
+        }
+    }, [searchName, loading]);
+
+    // 3) Só aqui você pode retornar condicionalmente
     if(loading) {
         return <PageSpinner />
     }
-
-    useEffect(() => {
-        searchCourses();
-    }, [searchName]);
 
     return(
         <>
@@ -43,16 +48,18 @@ export default function Search(){
             <title>OnebitFlix - {searchName}</title>
             <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
         </Head>
+
         <main className={styles.main}>
             <div className={styles.headerFooterBg}>
                 <HeaderAuth />
             </div>            
+
             {searchResult.length >= 1 ? (
                 <div className={styles.searchContainer}>
                     <Container className="d-flex flex-wrap justify-content-center gap-5 py-4">
-                    {searchResult.map((course) => (
-                        <SearchCard key={course.id} course={course} />
-                    ))}
+                        {searchResult.map((course) => (
+                            <SearchCard key={course.id} course={course} />
+                        ))}
                     </Container> 
                 </div>                
             ) : (
@@ -60,11 +67,11 @@ export default function Search(){
                     <p className={styles.noSearchResult}>Nenhum resultado encontrado</p>
                 </div>
             )}
+
             <div className={styles.headerFooterBg}>
                 <Footer />
             </div>          
         </main>
-        
         </>
     )
 }
