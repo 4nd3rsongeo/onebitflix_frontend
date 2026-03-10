@@ -18,14 +18,23 @@
     font-size: 40px;
     font-weight: bold;
     line-height: 50px;
+    color: white;
 }
 .description {
     font-size: 20px;
     color: colors.$lightGray;
     margin: 20px 0px 40px 0px;
 }
+
+.linkStyle {
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
 .btnCta {
-  text-decoration: none !important;   // força remover sublinhado
+  text-decoration: none;   // força remover sublinhado
   font-weight: bold;
   color: white;
   display: flex;
@@ -36,7 +45,7 @@
 
   &:hover {
     background-color: transparent;
-    text-decoration: none !important;
+    text-decoration: none;
   }
 }
 

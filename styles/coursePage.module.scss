@@ -8,6 +8,7 @@
 
 .courseInfo {
     margin-top: -120px;
+    color: white;
 }
 
 .coursetitle {
@@ -15,8 +16,15 @@
     font-weight: bold;
     padding-bottom: 25px;
     width: 700px;
+    color: white;
 }
-
+.name{
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 25px;
+    width: 700px;
+    color: white;
+}
 .courseDescription {
     color: colors.$lightGray;
     width: 650px;
@@ -68,6 +76,7 @@
     border-bottom: 1px solid colors.$lightRed;
     padding: 3px 14px;
     margin-bottom: 10px;
+    color: white;
 }
 
 .episodeLength {

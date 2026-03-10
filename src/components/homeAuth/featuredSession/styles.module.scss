@@ -5,10 +5,11 @@
     font-weight: bold;
     line-height: 50px;
     width: 600px;
+    color: white;
 }
 
 .description {
-    color: colors.$lightGray;
+    color: white;
     font-size: 21px;
     width:600px;
     height: 120px;
@@ -35,6 +36,13 @@
     width: 11px;
     margin: 0;
     padding: 0;
+}
+
+.linkText{
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 @media (max-width: 767px) {
