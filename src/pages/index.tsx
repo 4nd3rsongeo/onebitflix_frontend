@@ -54,13 +54,24 @@ const HomeNoAuth = ({ course }: IndexPageProps) => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const res =  await courseService.getNewestCourses();
-  return {
-    props: {
-      course: res.data,
-    },
-    revalidate: 3600 * 24,
-  };
+  try {
+    const res = await courseService.getNewestCourses();
+
+    return {
+      props: {
+        course: res.data ?? [], // fallback seguro
+      },
+      revalidate: 3600 * 24,
+    };
+  } catch (error) {
+    return {
+      props: {
+        course: [], // fallback obrigatório
+      },
+      revalidate: 3600 * 24,
+    };
+  }
 };
+
 
 export default HomeNoAuth
