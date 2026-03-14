@@ -1,0 +1,74 @@
+[0m[0m
+[0m[4mC:\Users\AlienWare\OneDrive\ONEBITCODE\AULAS\PROJETO-FINAL\onebitflix_frontend\src\components\common\footer\index.tsx[24m[0m
+[0m  [2m8:17[22m  [33mwarning[39m  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  [2m@next/next/no-img-element[22m[0m
+[0m[0m
+[0m[4mC:\Users\AlienWare\OneDrive\ONEBITCODE\AULAS\PROJETO-FINAL\onebitflix_frontend\src\components\common\headerAuth\index.tsx[24m[0m
+[0m   [2m7:10[22m  [33mwarning[39m  'profile' is defined but never used                                                                                                                                                                                                                                                      [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m25:32[22m  [33mwarning[39m  'event' is defined but never used                                                                                                                                                                                                                                                        [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m59:13[22m  [33mwarning[39m  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  [2m@next/next/no-img-element[22m[0m
+[0m  [2m76:13[22m  [33mwarning[39m  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  [2m@next/next/no-img-element[22m[0m
+[0m[0m
+[0m[4mC:\Users\AlienWare\OneDrive\ONEBITCODE\AULAS\PROJETO-FINAL\onebitflix_frontend\src\components\common\headerGeneric\index.tsx[24m[0m
+[0m  [2m18:21[22m  [33mwarning[39m  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  [2m@next/next/no-img-element[22m[0m
+[0m[0m
+[0m[4mC:\Users\AlienWare\OneDrive\ONEBITCODE\AULAS\PROJETO-FINAL\onebitflix_frontend\src\components\common\slideCard\index.tsx[24m[0m
+[0m  [2m15:21[22m  [33mwarning[39m  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  [2m@next/next/no-img-element[22m[0m
+[0m[0m
+[0m[4mC:\Users\AlienWare\OneDrive\ONEBITCODE\AULAS\PROJETO-FINAL\onebitflix_frontend\src\components\homeAuth\featuredSession\index.tsx[24m[0m
+[0m  [2m39:33[22m  [33mwarning[39m  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  [2m@next/next/no-img-element[22m[0m
+[0m[0m
+[0m[4mC:\Users\AlienWare\OneDrive\ONEBITCODE\AULAS\PROJETO-FINAL\onebitflix_frontend\src\components\homeNoAuth\headerNoAuth\index.tsx[24m[0m
+[0m   [2m9:17[22m  [33mwarning[39m  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  [2m@next/next/no-img-element[22m[0m
+[0m  [2m15:17[22m  [33mwarning[39m  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  [2m@next/next/no-img-element[22m[0m
+[0m  [2m22:17[22m  [33mwarning[39m  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  [2m@next/next/no-img-element[22m[0m
+[0m[0m
+[0m[4mC:\Users\AlienWare\OneDrive\ONEBITCODE\AULAS\PROJETO-FINAL\onebitflix_frontend\src\components\homeNoAuth\presentationSection\index.tsx[24m[0m
+[0m  [2m16:33[22m  [33mwarning[39m  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  [2m@next/next/no-img-element[22m[0m
+[0m  [2m25:25[22m  [33mwarning[39m  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  [2m@next/next/no-img-element[22m[0m
+[0m  [2m32:21[22m  [33mwarning[39m  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  [2m@next/next/no-img-element[22m[0m
+[0m[0m
+[0m[4mC:\Users\AlienWare\OneDrive\ONEBITCODE\AULAS\PROJETO-FINAL\onebitflix_frontend\src\components\listCategories\index.tsx[24m[0m
+[0m  [2m3:8[22m  [33mwarning[39m  'styles' is defined but never used  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\AlienWare\OneDrive\ONEBITCODE\AULAS\PROJETO-FINAL\onebitflix_frontend\src\components\profile\user\index.tsx[24m[0m
+[0m  [2m76:21[22m  [33mwarning[39m  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  [2m@next/next/no-img-element[22m[0m
+[0m[0m
+[0m[4mC:\Users\AlienWare\OneDrive\ONEBITCODE\AULAS\PROJETO-FINAL\onebitflix_frontend\src\components\searchCard\index.tsx[24m[0m
+[0m  [2m15:21[22m  [33mwarning[39m  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  [2m@next/next/no-img-element[22m[0m
+[0m[0m
+[0m[4mC:\Users\AlienWare\OneDrive\ONEBITCODE\AULAS\PROJETO-FINAL\onebitflix_frontend\src\pages\courses\[id].tsx[24m[0m
+[0m   [2m26:11[22m  [33mwarning[39m  React Hook useEffect has a missing dependency: 'router'. Either include it or remove the dependency array                                                                                                                                                                                [2mreact-hooks/exhaustive-deps[22m[0m
+[0m   [2m45:6[22m   [33mwarning[39m  React Hook useEffect has a missing dependency: 'getCourse'. Either include it or remove the dependency array                                                                                                                                                                             [2mreact-hooks/exhaustive-deps[22m[0m
+[0m  [2m110:11[22m  [33mwarning[39m  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  [2m@next/next/no-img-element[22m[0m
+[0m  [2m118:13[22m  [33mwarning[39m  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  [2m@next/next/no-img-element[22m[0m
+[0m  [2m124:13[22m  [33mwarning[39m  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  [2m@next/next/no-img-element[22m[0m
+[0m  [2m132:15[22m  [33mwarning[39m  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  [2m@next/next/no-img-element[22m[0m
+[0m  [2m139:15[22m  [33mwarning[39m  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  [2m@next/next/no-img-element[22m[0m
+[0m[0m
+[0m[4mC:\Users\AlienWare\OneDrive\ONEBITCODE\AULAS\PROJETO-FINAL\onebitflix_frontend\src\pages\courses\episode\[id].tsx[24m[0m
+[0m   [2m36:7[22m   [33mwarning[39m  React Hook useEffect has a missing dependency: 'router'. Either include it or remove the dependency array                                                                                                                                                                                [2mreact-hooks/exhaustive-deps[22m[0m
+[0m   [2m58:8[22m   [33mwarning[39m  React Hook useEffect has a missing dependency: 'handleGetEpisodeTime'. Either include it or remove the dependency array                                                                                                                                                                  [2mreact-hooks/exhaustive-deps[22m[0m
+[0m   [2m92:8[22m   [33mwarning[39m  React Hook useEffect has a missing dependency: 'getCourse'. Either include it or remove the dependency array                                                                                                                                                                             [2mreact-hooks/exhaustive-deps[22m[0m
+[0m  [2m163:17[22m  [33mwarning[39m  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  [2m@next/next/no-img-element[22m[0m
+[0m  [2m174:17[22m  [33mwarning[39m  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  [2m@next/next/no-img-element[22m[0m
+[0m[0m
+[0m[4mC:\Users\AlienWare\OneDrive\ONEBITCODE\AULAS\PROJETO-FINAL\onebitflix_frontend\src\pages\home.tsx[24m[0m
+[0m  [2m24:7[22m  [33mwarning[39m  React Hook useEffect has a missing dependency: 'router'. Either include it or remove the dependency array  [2mreact-hooks/exhaustive-deps[22m[0m
+[0m[0m
+[0m[4mC:\Users\AlienWare\OneDrive\ONEBITCODE\AULAS\PROJETO-FINAL\onebitflix_frontend\src\pages\index.tsx[24m[0m
+[0m  [2m66:12[22m  [33mwarning[39m  'error' is defined but never used  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\AlienWare\OneDrive\ONEBITCODE\AULAS\PROJETO-FINAL\onebitflix_frontend\src\pages\login.tsx[24m[0m
+[0m  [2m21:8[22m  [33mwarning[39m  React Hook useEffect has a missing dependency: 'router'. Either include it or remove the dependency array  [2mreact-hooks/exhaustive-deps[22m[0m
+[0m[0m
+[0m[4mC:\Users\AlienWare\OneDrive\ONEBITCODE\AULAS\PROJETO-FINAL\onebitflix_frontend\src\pages\register.tsx[24m[0m
+[0m  [2m21:8[22m   [33mwarning[39m  React Hook useEffect has a missing dependency: 'router'. Either include it or remove the dependency array  [2mreact-hooks/exhaustive-deps[22m[0m
+[0m  [2m30:11[22m  [33mwarning[39m  'data' is assigned a value but never used                                                                  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m90:17[22m  [31merror[39m    Synchronous scripts should not be used. See: https://nextjs.org/docs/messages/no-sync-scripts              [2m@next/next/no-sync-scripts[22m[0m
+[0m[0m
+[0m[4mC:\Users\AlienWare\OneDrive\ONEBITCODE\AULAS\PROJETO-FINAL\onebitflix_frontend\src\pages\search.tsx[24m[0m
+[0m  [2m31:7[22m  [33mwarning[39m  React Hook useEffect has a missing dependency: 'router'. Either include it or remove the dependency array         [2mreact-hooks/exhaustive-deps[22m[0m
+[0m  [2m38:8[22m  [33mwarning[39m  React Hook useEffect has a missing dependency: 'searchCourses'. Either include it or remove the dependency array  [2mreact-hooks/exhaustive-deps[22m[0m
+[0m[0m
+[0m[31m[1m✖ 37 problems (1 error, 36 warnings)[22m[39m[0m
+[0m[31m[1m[22m[39m[0m

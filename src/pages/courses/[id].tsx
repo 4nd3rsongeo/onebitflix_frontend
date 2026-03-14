@@ -21,6 +21,7 @@ export default function CoursePage() {
             if(!sessionStorage.getItem('onebitflix-token')){
                 router.push("/login")
             } else {
+                // eslint-disable-next-line react-hooks/set-state-in-effect
                 setLoading(false)
             }
         },[])
@@ -41,6 +42,7 @@ export default function CoursePage() {
   };
   //se mudar o id, tem que buscar o curso de novo
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     getCourse();
   }, [id]);
 

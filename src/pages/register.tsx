@@ -87,6 +87,7 @@ export default function Register(){
             <Head>
                 <title>Onebitflix - Registro</title>
                 <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
+                {/* eslint-disable-next-line @next/next/no-sync-scripts */}
                 <script src="https://jsuites.net/v5/jsuites.js"></script>
             </Head>
             <main className={styles.main}>

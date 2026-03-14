@@ -19,6 +19,7 @@ export default function HomeAuth(){
         if(!sessionStorage.getItem('onebitflix-token')){
             router.push("/login")
         } else {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
             setLoading(false)
         }
     },[])

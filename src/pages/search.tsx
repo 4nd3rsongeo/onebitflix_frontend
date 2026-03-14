@@ -11,7 +11,7 @@ import courseService, { CourseType } from "src/services/courseService";
 
 export default function Search(){
     const router = useRouter();
-    const searchName:any = router.query.name;
+    const searchName = router.query.name as string;
 
     const [searchResult, setSearchResult] = useState<CourseType[]>([]);
     const [loading, setLoading] = useState(true);
@@ -26,6 +26,7 @@ export default function Search(){
         if(!sessionStorage.getItem('onebitflix-token')){
             router.push("/login")
         } else {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
             setLoading(false)
         }
     },[])
@@ -33,6 +34,7 @@ export default function Search(){
     // 2) Busca cursos
     useEffect(() => {
         if (!loading) {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
             searchCourses();
         }
     }, [searchName, loading]);

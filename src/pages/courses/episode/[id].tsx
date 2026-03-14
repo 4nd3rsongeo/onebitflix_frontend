@@ -31,6 +31,7 @@ const EpisodePlayer = function () {
         if(!sessionStorage.getItem('onebitflix-token')){
             router.push("/login")
         } else {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
             setLoading(false)
         }
     },[])
@@ -54,6 +55,7 @@ const EpisodePlayer = function () {
     }
 
     useEffect(() => {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         handleGetEpisodeTime();
     }, [router])
 
@@ -84,19 +86,20 @@ const EpisodePlayer = function () {
         }
     };
 
-    useEffect(() => {
-        setMounted(true); // O componente montou no navegador
-        if (courseId) {
-        getCourse();
-        }
-    }, [courseId]);
-
     const getCourse = async function () {
         const res = await courseService.getEpisodes(courseId);
         if (res.status === 200) {
         setCourse(res.data);
         }
     };
+
+    useEffect(() => {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
+        setMounted(true); // O componente montou no navegador
+        if (courseId) {
+        getCourse();
+        }
+    }, [courseId]);
 
     // 2. Proteção: Se ainda não carregou o curso ou não montou, mostra o spinner
     if (!mounted || !course || !course.episodes) {

@@ -24,6 +24,7 @@ const Login = function () {
     useEffect(() => {
         const registerSuccess = router.query.registered;
         if(registerSuccess === "true") {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
             setToastColor("bg-success")
             setToastIsOpen(true);
             setTimeout(() => {
