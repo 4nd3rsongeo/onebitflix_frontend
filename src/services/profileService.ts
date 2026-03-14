@@ -23,7 +23,7 @@ export const profileService = {
             headers: {
                 Authorization: `Bearer ${token}`,
             },
-        }).catch((error: any) => {
+        }).catch((error: any /* eslint-disable-line @typescript-eslint/no-explicit-any */) => {
             return error.response;
         });
         // console.log("USER DATA:", res.data);
@@ -37,7 +37,7 @@ export const profileService = {
             headers: {
                 Authorization: `Bearer ${token}`,
             },
-        }).catch((error: any) => {
+        }).catch((error: any /* eslint-disable-line @typescript-eslint/no-explicit-any */) => {
             if(error.response.status === 400 || error.response.status === 401) {
                 return error.response;
             }           
@@ -52,7 +52,7 @@ export const profileService = {
             headers: {
                 Authorization: `Bearer ${token}`,
             },
-        }).catch((error: any) => {
+        }).catch((error: any /* eslint-disable-line @typescript-eslint/no-explicit-any */) => {
             if(error.response.status === 400 || error.response.status === 401) {
                 return error.response;
             }

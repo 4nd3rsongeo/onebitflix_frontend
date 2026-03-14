@@ -36,7 +36,7 @@ const courseService = {
         });
 
         return { data: res.data, error: null };
-        } catch (error: any) {
+        } catch (error: any /* eslint-disable-line @typescript-eslint/no-explicit-any */) {
         // console.log(error.response?.data?.message || "Erro inesperado");
         return { data: null, error: error.response?.data?.message };
         }

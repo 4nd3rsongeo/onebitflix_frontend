@@ -60,7 +60,7 @@ export default function Register(){
             
             // Redirecionar para login ou dashboard
         }
-    } catch (error: any) {
+    } catch (error: any /* eslint-disable-line @typescript-eslint/no-explicit-any */) {
         // Se cair no catch, o Axios geralmente coloca o erro em error.response
         // Se for Axios, a mensagem do backend está em error.response.data.message
         // const serverMessage = error.response?.data?.message;
