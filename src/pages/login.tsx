@@ -71,7 +71,7 @@ const Login = function () {
           btnUrl="/register"
           btnContent="Quero me cadastrar"
         />
-        <Container className="pi-5">
+        <Container className="py-5">
         <p className={styles.formTitle}>Bem vindo(a) de volta!</p>
         <Form className={styles.form} onSubmit={handleLogin}>
           <p className="text-center">
@@ -93,13 +93,13 @@ const Login = function () {
 
           <FormGroup>
             <Label for="password" className={styles.label}>
-              E-MAIL
+              SENHA
             </Label>
             <Input
               id="password"
               name="password"
               type="password"
-              placeholder="Senha"
+              placeholder="Digite a sua senha"
               required
               className={styles.input}
             />
